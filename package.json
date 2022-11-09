@@ -1,0 +1,30 @@
+{
+  "name": "codember-challenges",
+  "version": "1.0.0",
+  "description": "Solutions to https://codember.dev",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomimelo/codember-challenges.git"
+  },
+  "keywords": [
+    "codember",
+    "midudev",
+    "solutions",
+    "challenges",
+    "js",
+    "javascript",
+    "algorithms",
+    "code"
+  ],
+  "author": "Tomás Melone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomimelo/codember-challenges/issues"
+  },
+  "homepage": "https://github.com/tomimelo/codember-challenges#readme"
+}
