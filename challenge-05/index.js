@@ -1,13 +1,13 @@
 import { mecenas } from './mecenas.js'
 
 function solver() {
-  let survivors = [...mecenas.keys()]
-  while (survivors.length !== 1) {
-    const lastSurvivor = survivors.length % 2 === 0 ? null : survivors.pop()
-    survivors = survivors.filter((survivor, index) => index % 2 === 0)
-    if (lastSurvivor) survivors.unshift(lastSurvivor)
+  let survivorsIndexes = [...mecenas.keys()]
+  while (survivorsIndexes.length !== 1) {
+    const lastSurvivor = survivorsIndexes.length % 2 === 0 ? null : survivorsIndexes.pop()
+    survivorsIndexes = survivorsIndexes.filter((survivorIndex, index) => index % 2 === 0)
+    if (lastSurvivor) survivorsIndexes.unshift(lastSurvivor)
   }
-  const [survivorIndex] = survivors
+  const [survivorIndex] = survivorsIndexes
   return `submit ${mecenas[survivorIndex]}-${survivorIndex}`
 }
 
