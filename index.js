@@ -5,8 +5,20 @@ async function solve(challenge) {
   console.log(`${challenge.name} ==> ${await challenge.solver()}`);
 }
 
-const challenges = [...Object.values(Challenges2022), ...Object.values(Challenges2023)];
+const years = [
+  {
+    year: '2022',
+    challenges: Object.values(Challenges2022)
+  },
+  {
+    year: '2023',
+    challenges: Object.values(Challenges2023)
+  }
+]
 
-for (const challenge of challenges) {
-  await solve(challenge);
+for (const { year, challenges } of years) {
+  console.log(`========================================\n------------------${year}------------------\n========================================`)
+  for (const challenge of challenges) {
+    await solve(challenge);
+  }
 }
