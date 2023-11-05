@@ -1,5 +1,4 @@
 import { loadData } from "../../utils/dataLoader.js";
-import path from 'path'
 
 // This is a regex based solution
 async function solver() {
