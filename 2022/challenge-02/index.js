@@ -1,9 +1,9 @@
-import { loadData } from "../utils/dataLoader.js";
+import { loadData } from "../../utils/dataLoader.js";
 
 const ASCII_REGEX = /1\d{2}|9\d{1}/g
 
 async function solver() {
-  const encryptedMessage = await loadData("challenge-02/encrypted.txt");
+  const encryptedMessage = await loadData("2022/challenge-02/encrypted.txt");
 
   //Splitting encrypted message in separate words
   const words = encryptedMessage.split(" ")
@@ -24,7 +24,7 @@ function decryptWord(word) {
 }
 
 //Alternative solution in one line :D
-const alternativeSolver = async () => `submit ${(await loadData("challenge-02/encrypted.txt")).replace(ASCII_REGEX, (match) => String.fromCharCode(Number(match)))}`
+const alternativeSolver = async () => `submit ${(await loadData("2022/challenge-02/encrypted.txt")).replace(ASCII_REGEX, (match) => String.fromCharCode(Number(match)))}`
 
 export const challenge02 = {
   name: "Challenge 02",

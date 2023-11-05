@@ -1,9 +1,10 @@
-import { loadData } from "../utils/dataLoader.js";
+import { loadData } from "../../utils/dataLoader.js";
+import path from 'path'
 
 // This is a regex based solution
 async function solver() {
   // Load users.txt
-  const rawData = await loadData("challenge-01/users.txt");
+  const rawData = await loadData("2022/challenge-01/users.txt");
 
   // Parse file and get array of users splitting by double new lines (to get individual users)
   // and then split and join them again to get all the user info in a single line
@@ -26,7 +27,7 @@ async function solver() {
 // This is a more straight forward solution
 async function alternativeSolver() {
   // Load users.txt
-  const rawData = await loadData("challenge-01/users.txt");
+  const rawData = await loadData("2022/challenge-01/users.txt");
 
   // Parse file and get array of users splitting by double new lines (to get individual users)
   // and then split and join them again to get all the user info in a single line
