@@ -14,3 +14,6 @@ My solutions to https://codember.dev
 
 - [Challenge 01](2023/challenge-01)
 - [Challenge 02](2023/challenge-02)
+- [Challenge 03](2023/challenge-03)
+- [Challenge 04](2023/challenge-04)
+- [Challenge 05](2023/challenge-05)
