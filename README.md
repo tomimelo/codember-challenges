@@ -17,3 +17,7 @@ My solutions to https://codember.dev
 - [Challenge 03](2023/challenge-03)
 - [Challenge 04](2023/challenge-04)
 - [Challenge 05](2023/challenge-05)
+
+####2024
+
+- [Challenge 01](2024/challenge-01)
