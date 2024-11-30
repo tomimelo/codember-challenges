@@ -2,7 +2,7 @@ import { loadData } from "../../utils/dataLoader.js";
 
 async function solver() {
   const rawFiles = await loadData("2023/challenge-04/files_quarantine.txt")
-  const files = rawFiles.split('\r\n')
+  const files = rawFiles.split(/(?:\r)?\n/)
   let validCount = 0
   for (const file of files) {
     const processedFile = processFile(file)
@@ -13,7 +13,7 @@ async function solver() {
       return `submit ${processedFile.checksum}`
     }
   }
-  throw new Error('FATAL ERROR')
+  throw new Error('Savipo Yatar won. You weren\'t able to decipher the files')
 }
 
 function processFile(file) {
